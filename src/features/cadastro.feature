@@ -18,17 +18,17 @@ Funcionalidade: Página de cadastro
                   | Maria | santos    | Brasil | Rua bnhgdwdwyg    | Bh        | 5644135    | 235548       | mariasantos@ghj.com | mariasantos@tuios  | 54896  | 54896           |
 
 
-        Cenário: Cadastro com  nao preenchimento dos dados "incompleto"
+        Cenário: Cadastro com alguns dados  obrigatórios não preenchido
             Dado que na página de cadastro
              Quando não preencher todos os campos obrigatórios e "Enviar".
-             Então é exibida a mensagem "Todos os campos obrigatórios deveram ser preenchidos corretamente".
+             Então é exibida a mensagem "Os campos obrigatórios deveram ser preenchidos corretamente".
 
 
-        Cenário: Multiplos cadastros
+        Cenário: Múltiplos cadastros
             Dado que na página de cadastro
              Quando for preenchido  de cada usuário <nome>, <sobremone>, <pais>, <endereco>, <cidade>, <cep>, <telefone>, <e-mail>,<e-mailauternativo>, <senha>,<confirmarsenha> e "enviar".
              Então é exibido a mensagem  "Cadastro concluído com sucesso".
-              E o sistema devera armazenar todos os usuários cadasttados.
+              E o sistema deverá armazenar todos os usuários cadastrados.
 
 
                   | nome  | sobrenome   | pais   | endereco          | cidade     | cep       | telefone       | e-mail              | e-mail auternativo  | senha   | confirmar senha |

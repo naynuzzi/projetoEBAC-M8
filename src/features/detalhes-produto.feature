@@ -9,25 +9,25 @@ Funcionalidade: configuração e adição de produtos ao carrinho
 
         Cenário: Configuração bem-sucedida e adição ao carrinho.
             Dado que na página do produto
-             Quando preencher a cor "Azul", tamanho "M", quantidade "2" e "adicionar ao carrinho".
+             Quando preencher a cor "Azul", tamanho "M", quantidade "2" e "Enviar".
              Então é exibida a mensagem "Adicionado ao Carrinho."
 
 
-        Cenário: Nenhuma das opções das caracteristicas do produto.
+        Cenário: Um dos campos obrigatórios não selecionado.
             Dado que na página do produto
-             Quando não selecionar nenhuma caracteristica ao produto e "Enviar".
-             Então é exibida a mensagem  "Detalhes do produto são OBRIGATORIOS".
+             Quando não selecionar a <cor> e "Enviar".
+             Então é exibida a mensagem  "preencha todos os campos obrigatórios".
 
 
-        Cenário: Tentativa de adiconar mais de 10 produtos
+        Cenário: Tentativa de adicionar mais de 10 produtos
             Dado que na página do produto
              Quando o usuário preencher a <cor>, <tamanho> e ultrapassar a quantidade minima e "Enviar".
-             Então é exibida a mensagem "Quantidade minima foi ultrapassada."
+             Então é exibida a mensagem "Quantidade minima foi ultrapassado."
 
 
         Cenário: Campo obrigatório para adição do produto .
             Dado que na página do produto
-             Quando não adicionar o produto com <cor>, <tamanho> e <quantidade>.
+             Quando não adicionar o produto com <cor>, <tamanho> e <quantidade> e "Enviar".
              Então é exibida a mensagem "cor,tamanho e quantidade são obrigatório".
 
 
